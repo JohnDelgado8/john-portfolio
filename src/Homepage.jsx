@@ -117,7 +117,7 @@ function Homepage() {
             <h2 className={`caption-size ${theme}`}>Projects</h2></div>
             <Row className="pt-5 g-4">
   {imageLinks.map((item, index) => (
-    <Col xs={12} md={6} lg={4} xl={3} key={index}>
+    <Col xs={6} md={6} lg={4} xl={3} key={index}>
       <div className="image-container">
         <a href={item.link} target="_blank" rel="noopener noreferrer">
           <div className="overlay"></div> {/* Dark overlay */}
@@ -131,6 +131,38 @@ function Homepage() {
 </Row>
         </Container>
       </Container>
+
+
+      <Container className={`about-container pb-5 ${theme}`} fluid bg="dark" data-bs-theme="dark">
+        <Container fluid className="my-6">
+          <div className="text-center"> 
+            <h2 className={`caption-size ${theme}`}>About Me</h2></div>
+        <Row className="pt-5">
+        <Col className="align-self-center" xs={12} md={6} lg={6} xl={6}>
+       
+        <h2 className={`first-caption ${theme}`}>Hey. What's Up? Hello!  <Image className="hello-image" roundedCircle src={helloWave}></Image></h2>
+        
+
+       <p className={`about-text ${theme}`}>I'm John Rodolfo Delgado, a Web, WordPress, and Shopify developer with specialization in
+         creating custom, user-friendly e-commerce websites, integrating complex features, optimizing performance, and delivering seamless digital experiences. </p>
+       <p className={`about-text2 ${theme}`}>Coding is what I live for.</p>
+       <p className={`about-text ${theme}`}>Outside of work, I'm a drummer who loves playing and listening to music, as it fuels my creativity and keeps me inspired. I also enjoy playing online games, which help me unwind and release stress after a busy day. Additionally, I love to travel during holidays, exploring new places and cultures, which broadens my perspective and adds to my personal growth. These hobbies keep me balanced and motivated, both personally and professionally.</p>
+
+       <p className={`about-text ${theme}`}>With 3 years of experience in the tech industry, I have developed strong expertise as a <span className="highlight-text">Web, WordPress, and Shopify developer</span>.  I am eager to take on new challenges and expand my knowledge to deliver high-quality results for clients.</p>
+       <a href="http://localhost:3000/about" className="resume-button">
+        RESUME
+      </a>
+       
+       </Col> 
+        <Col className="image-circle align-self-center" xs={12} md={6} lg={6} xl={6}>
+        <Image className="circle-image"  roundedCircle src={aboutImage}  />
+        </Col>
+
+        
+            </Row>
+        </Container>
+      </Container>
+
     </>
   );
 }
