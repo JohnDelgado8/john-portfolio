@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.about-container{
+    background-color: #f7f5f5;
+    
+}
+
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Ensure it stays above other content */
+}
+
+
+.mobile-navbar{
+  justify-content: flex-end;
+}
+
+.navbar-toggler{
+  background-color: #E4A11B;
+}
+
+.nav-link {
+  font-family: 'Roboto', Arial, sans-serif; /* Example font stack */
+  font-size: 18px; /* Adjust size as needed */
+  font-weight: 500; /* Medium weight for readability */
+  color: black; /* Neutral color */
+  margin: 0 15px; /* Add spacing between links */
+}
+
+.nav-link.active {
+  color: #E4A11B !important;/* Highlight active link */
+  
+}
+
+
+.nav-link:hover{
+  color: #E4A11B;
+}
+
+
+.caption-size{
+  display: inline-block;
+  position: relative;
+  
+  font-size: 2rem; /* Adjust as per your preference */
+  color: #333; /* Change to match your theme */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caption-size::after {
+  content: '';
+  display: block;
+  width: 50%; /* Adjust the width of the underline */
+  height: 3px; /* Adjust the thickness of the underline */
+  background-color: #E4A11B; /* Change to your desired color */
+  margin: 8px auto 0; /* Adds space and centers underline */
+  border-radius: 2px; /* Adds a subtle rounded effect */
+}
+
+
+.App-logo {
+    height: 40px;
+    width: 100px;
+  }
+
+  .animated-greet{
+    color: black;
+    font-size: 26px;
+   
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .hire-button{
+   padding-top: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icon {
+    color: #000;
+    text-decoration: none;
+  }
+
+  /* App.css */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.mode-toggle-btn {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mode-toggle-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar-container {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+  
+  .social-icon:hover {
+    color: #E4A11B; /* Change to your preferred hover color */
+  }
+  .button-hire{
+  border-radius: 15px;
+  padding-left: 25px;
+   padding-right: 25px;
+   font-size: 15px;
+   border-color: #E4A11B;
+   background-color: #E4A11B;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+
+   .button-hire:hover{
+    border-color: #E4A11B;
+    background-color: white;
+    color: black;
+     }
+
+.first-column{
+    align-self: center;
+    padding-bottom: 40px;
+     padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+@media (max-width:992px){
+  .first-column {
+    align-self: center;
+    padding-bottom: 40px;
+     padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.second-column{
+  text-align: left;
+  margin-top: 20px;
+   
+}
+
+.navbar-container{
+  padding-top: 25px;
+}
+
+
+
+.container-margin {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  
+
+}
+.navbar{
+  justify-content: center;
+}
+
+} 
+
+@media (max-width:768px){
+ 
+
+  .first-column {
+    padding: 50px;
+    
+  };
+  
+}
+
+@media (max-width:768px){
+  .navbar-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.my-7{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  display: block; /* Removes any inline spacing issues */
+}
+
+.navbar-collapse {
+  background-color: #ffffff; /* Black background for dropdown */
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #000; /* Black background for mobile dropdown */
+  }
+
+  .navbar-collapse a {
+    color: #fff !important; /* White text for visibility on black */
+  }
+  .my-7{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.second-column{
+  text-align: right;
+   
+}
+
+
+
+.first-caption{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.second-caption{
+  color: black;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.about-us{
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes showLetters {
+    0%, 20% { content: 'H'; }
+    40% { content: 'He'; }
+    60% { content: 'Hel'; }
+    80% { content: 'Hell'; }
+    90% { content: 'Hello'; }
+    100% { content: 'Hello,'; }
+  }
+  
+  .animated-greet::before {
+    content: 'H';
+    animation: showLetters 3s steps(6) infinite; /* Total duration increased to 5s */
+  }
+  
+  /* Optional: Add visibility class for the pause */
+  .animated-greet.visible {
+    animation: none; /* Disable animation during pause */
+    content: 'Hello,'; /* Display full word */
+    visibility: visible;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in; /* Adjust duration and easing as needed */
+  }
+
+
+
+.about-image{
+  border-radius: 20px;
+}
+
+.my-6{
+  padding: 100px;
+  
+  
+}
+
+.my-10{
+ 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+}
+
+
+
+.my-9{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+  
+}
+
+.my-8{
+  padding-left: 100px;
+  padding-right: 100px;
+  
+  
+}
+
+@media (max-width:991px){
+  .my-6{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+  }
+
+  .my-8{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .my-9{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  .my-10{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+
+} 
+
+.container-margin {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.circle-image {
+   
+ width: 350px;
+ height: 350px;
+ border: #E4A11B solid 8px;
+  border-radius: 50%; /* Makes the image round */
+  overflow: hidden; /* Ensures no content spills outside the circle */
+  object-fit: cover; /* Ensures the image fills the circle properly */
+  display: block; /* Removes any inline-block spacing issues */
+}
+
+.image-circle{
+  justify-items: center;
+}
+
+.about-text{
+    color: black;
+   
+  text-align: justify;
+  
+
+}
+
+.about-text2{
+  color: black;
+  font-weight: bold;
+ 
+text-align: justify;
+
+
+}
+
+
+
+.hello-image {
+   
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+   overflow: hidden; /* Ensures no content spills outside the circle */
+   object-fit: cover; /* Ensures the image fills the circle properly */
+   
+ }
+
+ .highlight-text{
+  font-weight: bold;
+ }
+ 
+ .resume-button{
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+  text-underline-offset: 4px; 
+  color: #ffffff;
+ }
+
+
+ .resume-button:hover{
+ 
+  color: #E4A11B;
+
+ }
+.project-container{
+  padding-top: 40px;
+}
+
+ .image-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Ensure the link (a) tag takes up the full container */
+.image-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative; /* Ensures a tag is above the overlay */
+  z-index: 2; /* Ensure it's above the overlay */
+  text-decoration: none;
+}
+
+/* Overlay effect */
+.image-container .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Ensure it's below the link */
+}
+
+/* Make the overlay visible on hover */
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-5px);
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+/* New hover label at the center */
+.image-container .image-hover-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Show the label when hovering */
+.image-container:hover .image-hover-label {
+  opacity: 1;
+}
+
+.image-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: white;
+  
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover + .image-label {
+  transform: translateY(-5px);
+}
+
